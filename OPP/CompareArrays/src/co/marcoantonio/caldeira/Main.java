@@ -1,6 +1,8 @@
+package co.marcoantonio.caldeira;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class Main {
         ///Metodos do Array List
 
         List<String> names = new ArrayList<>();
+
 
         names.add("Nome 1");
         names.add("Nome 2");
@@ -45,5 +48,8 @@ public class Main {
         //Limpar de vez a lista(remover todos os elementos)
         names.clear();
         System.out.print(names.isEmpty());
+
+        User userA = new User("Marco Antonio", "");
+        System.out.println(userA.output());
     }
 }
